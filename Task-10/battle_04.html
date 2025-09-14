@@ -1,0 +1,48 @@
+<!--6 September 2025 css daily target question -->
+<div class="vertical"></div>
+<div class="horizontal"></div>
+<style>
+   body {
+  background: #142932;
+  display: flex;
+justify-content: center; align-items: center;
+flex-direction: column;
+margin: 0;
+height: 100vh;
+width: 100vw;
+}
+.vertical {
+width: 310px;
+height: 120px;
+background: #00D47E;
+border-radius: 60px; 
+position: relative;
+}
+.horizontal {
+width: 90px;
+height: 110px;
+background: #00D47E;
+margin-left: 1px;
+position: relative;
+}
+.vertical::after {
+content: '';
+position: absolute; 
+top: 25%;
+left: 28;
+transform:translateY(-50%,-50%);
+background: #142932;
+width: 250px;
+height: 60px;
+}
+.horizontal::after {
+  content: '';
+  position: absolute;
+  bottom: 31px;
+  left:50%;
+  transform: translateX(-50%);
+  background:#142932;
+  width: 32px;
+  height:160px;
+}
+</style>
